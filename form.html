@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran MPL</title>
+    <link rel="stylesheet" href="css/form-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Formulir Pendaftaran MPL-ID</h1>
+    </header>
+
+    <!-- Formulir Pendaftaran -->
+    <main>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="nickname">Nama In-Game:</label>
+            <input type="text" id="nickname" name="nickname" required>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" name="gender">
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option>
+            </select>
+
+            <label for="team">Nama Tim:</label>
+            <input type="text" id="team" name="team" required>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Pesan atau Komentar:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Hak Cipta © 2023 Mobile Legends Professional League</p>
+    </footer>
+</body>
+</html>
